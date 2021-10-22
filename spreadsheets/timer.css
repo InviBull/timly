@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+:root{
+    --dark-purple:#524bda;
+    --darker-black:#212529;
+    --white:#e5e5e5;
+    --black:#141414;
+}
+
+#link-timer{
+    color: var(--dark-purple) !important;
+}
+
+::-webkit-scrollbar {
+    width: 4px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--white);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--dark-purple);
+}
+
+.timer{
+    display: block;
+}
+
+.timer .heading-timer{
+    text-align: center;
+}
+
+.timer .heading-timer h3{
+    color: var(--darker-black);
+    font-size: 50px;
+    font-weight: 800;
+}
+
+.timer .clock-timer .time{
+    display: flex;
+    
+    align-items: center;
+    justify-content: center;
+}
+
+.timer .clock-timer .time select{
+    padding: 5px;
+
+    height: auto;
+    width: fit-content;
+
+    font-weight: bold;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 25px;
+
+    border: none;
+    cursor: pointer;
+}
+
+.timer .clock-timer .time option{
+    font-weight: bold;
+    font-family: 'Bebas Neue', cursive;
+}
+
+.divider{
+    margin-left: 10px;
+    margin-right: 10px;
+
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+.timer .clock-timer .buttons{
+    display: flex;
+    
+    align-items: center;
+    justify-content: center;
+}
+
+.timer .clock-timer .buttons button{
+    align-items: center;
+    justify-content: center;
+
+    margin-left: 5px;
+    margin-right: 5px;
+    
+    font-size: 20px;
+
+    padding: 13px 17px 13px 17px;
+
+    border-radius: 7px;
+    border: none;
+
+    outline: none;
+
+    background-color: var(--darker-black);
+
+    transition: all 0.3s;
+}
+
+.fa-refresh, .fa-play, .fa-pause{
+    color: var(--white);
+}
+
+.timer .clock-timer .buttons button:hover{
+    background-color: var(--black);
+    transform: scale(1.1, 1.1);
+}

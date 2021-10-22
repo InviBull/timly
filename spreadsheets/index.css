@@ -1,0 +1,27 @@
+:root{
+    --purple:#6C63FF;
+}
+
+.content{
+    margin-top: 100px;
+    margin-left: 30px;
+}
+
+.content .about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content .about p{
+    font-size: 20px;
+}
+
+.content .about a{
+    color: var(--purple);
+    text-decoration: none;
+}
+
+.content .about img{
+    height: 500px;
+}

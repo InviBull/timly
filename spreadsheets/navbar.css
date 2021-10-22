@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+:root{
+	--black:#141414;
+}
+
+body {
+	margin-top: 0;
+	margin-left: 0;
+	margin-right: 0;
+}
+
+.navbar {
+	display: flex;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	width: 100%;
+}
+
+.navbar .header {
+	margin-left: 20px;
+}
+
+.navbar .header h3 a {
+	color: var(--black);
+	text-decoration: none;
+    font-family: 'Inter', sans-serif;
+}
+
+.navbar .nav-links {
+	margin-left: 20px;
+}
+
+.navbar .nav-links ul {
+	display: flex;
+}
+
+.navbar .nav-links ul li {
+	list-style-type: none;
+	padding-left: 20px;
+	margin-top: 5px;
+}
+
+.navbar .nav-links ul li a {
+	text-decoration: none;
+	color: var(--black);
+    font-family: 'Inter', sans-serif;
+}

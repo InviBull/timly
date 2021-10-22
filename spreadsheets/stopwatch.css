@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+:root{
+    --dark-purple:#524bda;
+    --darker-black:#212529;
+    --white:#e5e5e5;
+    --black:#141414;
+}
+
+#link-stopwatch{
+    color: var(--dark-purple) !important;
+}
+
+.stopwatch{
+    display: block;
+}
+
+.stopwatch .heading-stopwatch{
+    text-align: center;
+}
+
+.stopwatch .heading-stopwatch h3{
+    color: var(--darker-black);
+    font-size: 50px;
+    font-weight: 800;
+    font-family: "Inter", sans-serif;
+}
+
+.stopwatch .clock-stopwatch .time{
+    display: flex;
+    
+    align-items: center;
+    justify-content: center;
+}
+
+.stopwatch .clock-stopwatch .time p{
+    font-weight: bold;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 70px;
+}
+
+.divider{
+    margin-left: 10px;
+    margin-right: 10px;
+
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+.stopwatch .clock-stopwatch .buttons{
+    display: flex;
+    
+    align-items: center;
+    justify-content: center;
+}
+
+.stopwatch .clock-stopwatch .buttons button{
+    align-items: center;
+    justify-content: center;
+
+    margin-left: 5px;
+    margin-right: 5px;
+    
+    font-size: 20px;
+
+    padding: 13px 17px 13px 17px;
+
+    border-radius: 7px;
+    border: none;
+
+    outline: none;
+
+    background-color: var(--darker-black);
+
+    transition: all 0.3s;
+}
+
+.fa-refresh, .fa-play, .fa-pause{
+    color: var(--white);
+}
+
+.stopwatch .clock-stopwatch .buttons button:hover{
+    background-color: var(--black);
+    transform: scale(1.1, 1.1);
+}

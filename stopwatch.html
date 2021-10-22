@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Times your work.">
+    <title>Timly | Timer</title>
+    <link rel="stylesheet" href="./spreadsheets/navbar.css">
+    <link rel="stylesheet" href="./spreadsheets/stopwatch.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class = "navbar">
+        <div class = "header">
+            <h3 id = "header-heading"><a href="./index.html">Timly</a></h3>
+        </div>
+        <div class = "nav-links">
+            <ul id = "links-list">
+                <li id = "list-stopwatch"><a href="./stopwatch.html" id = "link-stopwatch">Stop Watch</a></li>
+                <li id = "list-tt"><a href="./timer.html" id = "link-timer">Timer</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class = "stopwatch">
+        <div class = "heading-stopwatch">
+            <h3>Stop Watch</h3>
+        </div>
+        <div class = "clock-stopwatch">
+            <div class = "time">
+                <p id = "hr-display">00</p>
+                <p class = "divider">:</p>
+                <p id = "min-display">00</p>
+                <p class = "divider">:</p>
+                <p id = "sec-display">00</p>                  
+                <p class = "divider">.</p>
+                <p id = "ms-display">0</p>
+            </div>
+            <div class = "buttons">
+                <button id = "toggle-button" onclick = "toggleWatch();"  title = "Start"><i id = "icon-1" class = "fa fa-play"></i></button>
+                <button id = "reset-button" onclick = "resetWatch();"  title = "Reset"><i id = "icon-2" class = "fa fa-refresh"></i></button>
+            </div>
+        </div>
+    </div>
+    <script src="./src/stopwatch.js"></script>
+</body>
+</html>
